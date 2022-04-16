@@ -20,3 +20,32 @@
 i{
     align-self: center;
 }
+img{
+    width: 20px;
+    height: 20px;
+}
+.form-control{ 
+    border: none;
+    background-color: rgb(54, 54, 54) !important;
+
+}
+.input-group-text{
+    border: none;
+    background-color: rgb(54, 54, 54) !important;
+    position: relative;
+    left: 0.5rem;
+}
+.input-group-prepend{
+    background-color: none !important;
+    border: none !important;
+}
+.input-group{
+    width: 700px;
+}
+.todoContent{
+    width: 600px;
+    align-items: center !important;
+    align-self: center !important;
+    justify-content: center !important;
+    display: flex;
+}
