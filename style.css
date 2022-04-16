@@ -1,5 +1,10 @@
-/* .nav{
-} */
+*{
+    box-sizing: border-box;
+}
+:root{
+    --checkbox-color: rgb(54, 54, 54) !important;
+    --add-button:palevioletred;
+}
 .container{
     background-color: grey;
     /* width: 700px; */
@@ -35,7 +40,7 @@ img{
     position: relative;
     left: 0.5rem;
 }
-.input-group-prepend{
+.inputOne{
     background-color: none !important;
     border: none !important;
 }
@@ -49,3 +54,14 @@ img{
     justify-content: center !important;
     display: flex;
 }
+.submit-task{
+    width: 32px;
+    height:32px;
+    flex-shrink: 0;
+    border: none;
+    background: var(--add-button);
+    color: gainsboro;
+    cursor: pointer;
+}
+
+
