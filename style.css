@@ -1,0 +1,22 @@
+/* .nav{
+} */
+.container{
+    background-color: grey;
+    /* width: 700px; */
+}
+.nav{
+    border-bottom: 1px solid slategrey !important;
+
+}
+.day{
+    color: gainsboro;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid palevioletred !important;
+} 
+.disabled{
+    color: gainsboro !important;
+}
+i{
+    align-self: center;
+}
