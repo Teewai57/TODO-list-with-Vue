@@ -63,5 +63,12 @@ img{
     color: gainsboro;
     cursor: pointer;
 }
+.task-list-item{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
 
