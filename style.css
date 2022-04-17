@@ -63,12 +63,37 @@ img{
     color: gainsboro;
     cursor: pointer;
 }
+.taskList{
+    width: 700px;
+    background-color: transparent;
+}
 .task-list-item{
     background-color: transparent;
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    position: relative;
+    right: 30px !important;
+}
+.task-list-item input{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #272727;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.task-list-item input:hover{
+    border-color:var(--checkbox-color) ;
+}
+.task-list-item input:checked{
+    background-size: 10px;
+    border: 1px solid var(--checkbox-color);
+    background-color: var(--checkbox-color);
+}
+.task-list-item input:checked + span {
+    color: #272727;
+    text-decoration: line-through #272727;
 }
 
 
