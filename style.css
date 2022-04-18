@@ -1,16 +1,21 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-color: palevioletred;
+}
 :root{
     --checkbox-color: rgb(54, 54, 54) !important;
     --add-button:palevioletred;
 }
 .container{
-    background-color: grey;
-    /* width: 700px; */
+    background-color: rgb(78, 78, 78);
+    width: 35%;
+    margin-top: 55px;
+    border-radius: 10px;
 }
-.nav{
-    border-bottom: 1px solid slategrey !important;
+.bottom{
+    border-bottom: 2px solid #3a3a3a !important;
 
 }
 .day{
@@ -19,11 +24,19 @@
     font-weight: bold;
     border-bottom: 2px solid palevioletred !important;
 } 
-.disabled{
-    color: gainsboro !important;
-}
 i{
     align-self: center;
+}
+.nav-link{
+    color: gainsboro;
+    font-size: 15px;
+}
+.nav-link:hover{
+    color: gainsboro;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid palevioletred !important;
+    transition: 0.5s;
 }
 img{
     width: 20px;
@@ -45,7 +58,7 @@ img{
     border: none !important;
 }
 .input-group{
-    width: 700px;
+    width: 400px;
 }
 .todoContent{
     width: 600px;
@@ -81,7 +94,7 @@ input:focus{
     box-shadow: none!important;
 }
 .taskList{
-    width: 700px;
+    width: 400px;
     background-color: transparent;
 }
 .task-list-item{
@@ -110,7 +123,11 @@ input:focus{
 }
 .task-list-item input:checked + span {
     color: #272727;
-    text-decoration: line-through #272727;
+    text-decoration: line-through 3px #272727 ;
+    font-weight: bold;
 }
-
+.dropdown{
+    position: relative;
+    top: 15px;
+}
 

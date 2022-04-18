@@ -24,20 +24,20 @@
         <div class="container" id="todoApp">
 
           <!-- Nav tabs -->
-          <div class="row justify-content-center pt-1">
+          <div class="row justify-content-center pt-1 bottom">
             <ul class="nav" id="navId">
-              <li class="nav-item mx-5">
+              <li class="nav-item ">
                 <a href="#" class="nav-link day">Day</a>
               </li>
       
-              <li class="nav-item mx-5">
-                <a href="#" class="nav-link disabled">Week</a>
+              <li class="nav-item">
+                <a href="#" class="nav-link mx-2">Week</a>
               </li>
-              <li class="nav-item mx-5">
-                <a href="#" class="nav-link disabled">Month</a>
+              <li class="nav-item">
+                <a href="#" class="nav-link mx-2">Month</a>
               </li>
-              <li class="nav-item mx-5">
-                <a href="#" class="nav-link disabled">Year</a>
+              <li class="nav-item">
+                <a href="#" class="nav-link mx-2">Year</a>
               </li>
             </ul>
           </div>
@@ -45,7 +45,7 @@
       
           <!-- DAY TEXTS  -->
       
-          <div class="row justify-content-center p-5">
+          <div class="row justify-content-center p-5 text-white">
             <i class="fa fa-arrow-left mx-5" aria-hidden="true"></i>
             <div class="dayTexts">
               <h2>Thursday</h2>
@@ -64,7 +64,6 @@
                   </div>
                   <input type="text" class="form-control" placeholder="Add a task..." v-model="tasks.name" @keyup.enter="newItem" aria-label="Username"
                     aria-describedby="basic-addon1">
-                  <input type="submit" value="Add" class="submit-task" title="Add Task" @click="newItem">
                 </div>
               </form>
               <!-- PLACEHOLDER -->
@@ -80,7 +79,6 @@
                   <input type="checkbox">
                   <span class="mx-2 text-white"> {{task.name}} </span>
                 </label>
-                <span class="more delete-btn" title="delete task"></span>
               </li>
               <div class="dropdown">
                 <div class="dropdown-toggle"id="triggerId" data-toggle="dropdown" aria-haspopup="true"
