@@ -67,9 +67,9 @@
           <div class="input-group-prepend inputOne">
             <span class="input-group-text inputOne"><i class="fa fa-align-justify" aria-hidden="true"></i></span>
           </div>
-          <input type="text" class="form-control" placeholder="Add a task..." aria-label="Username"
+          <input type="text" class="form-control" autocomplete="off" placeholder="Add a task..." v-model="tasks.name" @keyup.enter="newItem" aria-label="Username"
             aria-describedby="basic-addon1">
-          <!-- <button class="submit-task">Add</button> -->
+          <input type="submit" value="" class="submit-task" title="Add Task" @click="newItem">
         </div>
       </form>
       <!-- PLACEHOLDER -->
