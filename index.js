@@ -7,10 +7,17 @@ const todoApp = Vue.createApp({
                 { name: 'Today : Internal Meeting' },
                 { name: 'Tomorrow : Read a book' },
                 { name: 'Daily : Event Joins' },
-            ]
+            ],
+            pinTask: [],
 
         }
     },
+    // computed : {
+    //     allPinnedTasks(){
+    //         return this.pinTask
+
+    //     }
+    // },
     methods: {
         newItem: function () {
             if (!this.tasks.name) {
@@ -24,6 +31,13 @@ const todoApp = Vue.createApp({
         },
         delItem: function (task) {
             this.tasks.splice(this.tasks.indexOf(task), 1)
+        },
+        pinToTop: function (task) {
+            this.pinTask.push(task)
+            console.log(this.pinTask);
+        },
+        delPinned: function (task) {
+            this.pinTask.splice(this.pinTask.indexOf(task), 1)
         }
     }
 
