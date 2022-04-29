@@ -84,7 +84,6 @@ img{
 }
 input{
     color: gainsboro !important;
-    /* font-weight: bold !important; */
 }
 input::placeholder{
     font-weight: bold;
@@ -130,11 +129,6 @@ input:focus{
     position: relative;
     top: 15px;
 }
-/* .pinned{
-    /* position: relative; */
-    /* bottom: 20px; */
-    /* border-bottom: 2px solid #3a3a3a; 
-} */
 .fa-map-pin{
     transform: rotate(-45deg);
     color: palevioletred !important;

@@ -1,4 +1,3 @@
-
 const todoApp = Vue.createApp({
     data() {
         return {
@@ -6,7 +5,7 @@ const todoApp = Vue.createApp({
             tasks: [
                 { name: 'Today : Internal Meeting' },
                 { name: 'Tomorrow : Read a book' },
-                { name: 'Daily : Event Joins' },
+                { name: 'Daily : Event Joixns' },
             ],
             pinTask: [],
 
