@@ -10,8 +10,8 @@ body{
 }
 .container{
     background-color: rgb(78, 78, 78);
-    width: 35%;
-    margin-top: 55px;
+    width: 35rem;
+    margin-top: 40px;
     border-radius: 10px;
 }
 .bottom{
@@ -132,4 +132,9 @@ input:focus{
 .fa-map-pin{
     transform: rotate(-45deg);
     color: palevioletred !important;
+}
+@media (max-width:768px) {
+    .container{
+        width: 70%;
+    }
 }
